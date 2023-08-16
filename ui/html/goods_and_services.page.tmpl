@@ -1,0 +1,293 @@
+{{template "base" .}}
+
+{{define "stylesheet"}}goods_and_services.css{{end}}
+
+{{define "name"}}Товары и услуги{{end}}
+
+{{define "menu"}}
+    <li><a href="/">Главная</a></li>
+    <li><a href="/about_us">О компании</a></li>
+    <li><a href="/goods_and_services" class="active">Товары и услуги</a></li>
+    <li><a href="/delivery">Доставка и оплата</a></li>
+    <li><a href="/goods_and_services#contact">Контакты</a></li>
+{{end}}
+
+{{define "main"}}
+    <div class="container white">
+        <h3>Товары:</h3>
+        <p class="content">Нажмите на товар для получения более подробной информации</p>
+        <ul>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-1"><span>Цветной металлопрокат</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-2"><span>Трубы электросварные</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-3"><span>Трубы бесшовные</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-4"><span>Трубы нержавеющие</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-5"><span>Трубы чугунные</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-6"><span>Трубы профильные</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-7"><span>Гофрированные трубы ЛМГ (МГК)</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-8"><span>Сортовой и фасонный прокат</span></button></li>
+            <li class="goods"><button style="background:transparent; border: none;" data-toggle="modal" data-target="#ModalForm-9"><span>Листовой металлопрокат</span></button></li>
+            <li class="goods">Нержавеющий металлопрокат</li>
+        </ul>
+        <h3>Услуги:</h3>
+        <p class="content">Дополнительно к комплексным поставкам предлагаем большой выбор дополнительных услуг.</p>
+        <ul>
+            <li class="goods">Складское  хранение.</li>
+            <li class="goods">Доставка и экспедирование грузов.</li>
+            <li class="goods">Услуги перевозки грузов собственным автотранспортом.</li>
+            <li class="goods">Отправка грузов жд транспортом.</li>
+            <li class="goods">Поставки напрямую с заводов-производителей.</li>
+            <li class="goods">Изготовление металлоконструкций любой сложности.</li>
+            <li class="goods">Рубка листа гильотиной.</li>
+            <li class="goods">Раскрой и резка в размер (лазерная, плазменная).</li>
+            <li class="goods">Гибка профнастила и элементов кровли.</li>
+            <li class="goods">Оцинкование металлоконструкций, металлопроката и труб.</li>
+            <li class="goods">Различные виды теплоизоляции труб:
+                            <ul>
+                                <li class="goods">ПеноПолеУретаном (ППУ с Полиэтиленовой или Оцинкованной оболочкой);</li>
+                                <li class="goods">Теплоизоляция труб минеральная (ППМИ);</li>
+                                <li class="goods">Гидроизоляция труб Весьма усиленного типа (ВУС).</li>
+                            </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="ModalForm-1" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalFormLabel"><b>Цветной металлопрокат</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+				</div>
+				<div class="modal-body">
+                <p><img src="/static/img/goods/first.jpg">Цветным металлопрокатом называют изделия, выполненные из сплавов цветных металлов, которые
+                применяются в самых разных отраслях, начиная от создания автомобильного, морского и воздушного
+                транспорта и заканчивая строительством зданий и сооружений, производством бытовой техники и
+                оборудования.</p>
+                <p>Больше всего востребованы цветные металлы и сплавы в промышленности. Благодаря высокой степени
+                прочности, малому весу и длительному периоду эксплуатации представленный вид проката активно
+                применяется на ведущих заводах, на крупных фабриках и электростанциях.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="modal fade" id="ModalForm-2" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalFormLabel"><b>Трубы электросварные</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+				</div>
+				<div class="modal-body">
+			    <p>Существуют различные виды электросварных труб:</p>
+			    <ul>
+                	<li><b>Трубы электросварные прямошовные</b></li>
+                	<li><b>Трубы водогазопроводные</b></li>
+                	<li><b>Трубы спиральношовные</b></li>
+                	<li><b>Трубы в изоляции</b></li>
+                	<li><b>Трубы 2 сорт свайные</b></li>
+                	<li><b>Трубы оцинкованные</b></li>
+                </ul>
+                <p>Среди особенностей заказа данного вида металлопроката можно выделить:<br/>
+                - Главной особенностью труб является наличие сварного шва.<br/>
+                - Производство осуществляется с применением разных типов стали. Среди наиболее распространенных можно выделить низколегированную, нержавеющую и т.д.<br/>
+                - Различают несколько видов труб: прямошовные с малым и большим диаметром. При покупке необходимо обращать внимание на толщину стенки.<br/>
+                - Трубы имеют сертификаты соответствия и изготовлены согласно требованиям ГОСТ.
+                </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ModalForm-3" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Трубы бесшовные</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+    			    <p>Классификация данного вида металлопроката осуществляется по размерным параметрам – внутренний
+    			    диаметр, толщина стенки и длина изделия. В техническом паспорте производителя обязательно
+    			    указывается марка стали, используемая в производстве и технологический способ изготовления –
+    			    различают 2-а варианта:</p>
+    			    <ul>
+                    	<li><b>Горячий прокат</b> – заготовка разогревается до высоких температур и
+                    	раскатывается до заданных размерных параметров.</li>
+                    	<li><b>Холоднокатаные изделия</b> – нужную форму и размер заготовке придают с использованием
+                    	специального прессового оборудования.</li>
+                    </ul>
+                    <p>В основном бесшовные трубы применяют в системах с требованиями к повышенной надежности.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	<div class="modal fade" id="ModalForm-4" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Трубы нержавеющие</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+    			    <p><img src="/static/img/goods/fourth.jpg">Изучая основные преимущества эксплуатации данных изделий металлопроката, можно выделить
+    			    длительный срок службы, стойкость к коррозии, прочность, надежность, универсальность,
+    			    эстетические свойства.</p>
+                    <p>Областей применения нержавеющего металлопроката в современной промышленной сфере достаточно
+                    много. Благодаря высоким эксплуатационным характеристикам изделия из нержавейки являются наиболее
+                    востребованными в строительной сфере, машиностроении, а также пищевой и химической
+                    промышленности.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	<div class="modal fade" id="ModalForm-5" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Трубы чугунные</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+    			    <p><img src="/static/img/goods/fifth.jpg">Чугунные трубы — это материал, чаще всего используемый
+    			    в системах наружной и внутренней канализации, системах отопления и водоснабжения. В проведении
+    			    внутренних сетей стало популярно использование металлопластиковых труб, однако в наружных системах
+    			    канализации без труб из чугуна невозможно обойтись. Чугунные трубы намного прочнее и долговечнее
+    			    пластиковых. Их срок использования в 2-3 раза длительнее, чем срок эксплуатации пластиковых труб,
+    			    помимо этого они обладают высокой износостойкостью, не пожароопасны, имеют минимальный
+    			    коэффициент растяжения.</p>
+                    <p>Существуют 2 основные типа чугунных труб, которые отличаются друг от друга сферой использования:</p>
+    			    <ul>
+                    	<li><b>Водопроводные чугунные трубы</b> – используются в системах водопровода.</li>
+                    	<li><b>Канализационные чугунные трубы</b> – используются в наружных и внутренних системах канализации.</li>
+                    </ul>
+                    <p>Трубы, как и фасонные части к ним производятся из серого чугуна, после чего они полностью
+                    внутри и снаружи покрываются слоем БНИ-IV (нефтяной битум), для того чтобы предохранить чугун от
+                    коррозийного разрушения. После покрытия внутренняя и наружная поверхность становится гладкой,
+                    поэтому уменьшается трение воды о стенки трубы.</p>
+                    <p>После производства обязательно поверяется качество чугунных труб, стенки простукиваются
+                    молоточком: так определяется, нет ли более тонких участков, либо трещин. На внутренней поверхности
+                    трубы из чугуна не должно быть раковин, швов, пузырей, свищей, шлаковых включений и любых других
+                    дефектов, которые бы смогли сократить срок эксплуатации.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	<div class="modal fade" id="ModalForm-6" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Трубы чугунные</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+                    <p>Профтрубу в последние десятилетия начали использовать в строительстве, в индустрии рекламы и
+                    дизайна, тяжелой и легкой промышленности – сфер применения много. Различают пара основных видов
+                    по форме:</p>
+    			    <ul>
+                    	<li><b>Квадратная</b> профильная труба (ГОСТ 8639-83) – многофункциональный материал,
+                    	который подходит для укрепления фундаментов, армирования каркаса стен и постройки перекрытий.
+                    	Квадратная форма дает возможность выдерживать нагрузки и сохранить устойчивость. Профильная
+                    	труба подобного вида просто перевозится и устанавливается.</li>
+                    	<li><b>Прямоугольное</b> сечение (ГОСТ 8645-68) по прочности вообще не уступает квадратному.
+                    	Используется, когда требуется уменьшить вес системы, но не в ущерб рабочим параметрам. Еще
+                    	оптимален для армирования и укрепления.</li>
+                    	<li><b>Овальная</b> профильная труба (ГОСТ 8642-68) нередко применяется для производства
+                    	декоративных конструкций: беседок, заборов или навесов. Их главное отличие в сравнении с
+                    	другими видами – небольшая толщина – 0,5-1,2 мм.</li>
+                    </ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	<div class="modal fade" id="ModalForm-7" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Гофрированные трубы ЛМГ (МГК)</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+                    <p><img src="/static/img/goods/seventh.jpg">Труба ЛМГ (МГК) — это водопропускная гофрированная труба диаметром от 800 до 8000 мм, с
+                    толщиной гофрированного листа от 2,5 до 7,0 мм, сборная конструкция состоит из отдельных
+                    металлических гофрированных листов с размерами гофры 130×32,5 мм или 150×50 мм.</p>
+                    <p>На виды трубы разделяются по двум признакам — это диаметр и толщина сечения. Сечение может быть
+                    круглым, грушевидным, арочным, в виде горизонтального или вертикального эллипса и так далее.</p>
+                    <p>Круглое сечение используется для труб небольшого диаметра с целью создания водопропускных
+                    сооружений, высота которых от 1,5 до 7 метров.</p>
+                    <p>Труба-арка используется для сооружения тоннелей под автодорогами и железнодорожным полотном,
+                    высота их от 2 до 13 метров. Трубы с арочным сечением предназначаются для автомобильных и
+                    железнодорожных тоннелей, небольших по размеру мостов.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="modal fade" id="ModalForm-8" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Сортовой и фасонный прокат</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+                    <p><img style="width: 25%;" src="/static/img/goods/eighth_1-2.jpeg">К <b>сортовому</b> относится прокат, у которого касательная
+                    к любой точке контура поперечного сечения данное сечение не пересекает: прокат круглый, квадратный,
+                    шестигранный, полосовой, арматура.</p>
+                    <p><img style="float: left;" src="/static/img/goods/eighth_2.jpeg">К <b>фасонному</b> относится прокат, у которого касательная
+                    хотя бы к одной точке контура поперечного сечения данное сечение пересекает: балка, швеллер,
+                    уголок и профили специального назначения.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="modal fade" id="ModalForm-9" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="modalFormLabel"><b>Листовой металлопрокат</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+    			</div>
+    			<div class="modal-body">
+                    <p><img src="/static/img/goods/ninth.jpg">Номенклатура выпускаемой в
+                    настоящее время листовой стали очень широка и многообразна. Существует большое количество
+                    нормативной документации, определяющей сортамент, технические требования и сферу применения
+                    всех видов стального листа. Листы различаются:</p>
+                    <ul>
+                        <li><b>толщиной</b> — сталь тонколистовая (0,35–3,99 мм) и толстолистовая (4–160 мм);</li>
+                        <li><b>способом производства</b> — горячекатаная и холоднокатаная;</li>
+                        <li><b>точностью прокатки</b> — повышенной и нормальной точности;</li>
+                        <li><b>плоскостностью</b> — особо высокой, высокой и нормальной плоскостности;</li>
+                        <li><b>видом кромки</b> — с необрезной и с обрезной кромкой.</li>
+                    </ul>
+                    <p>Изделия поставляются потребителю в листах при толщине от 0,5 до 160 мм
+                    или в рулонах при толщине стали от 0,4 до 12 мм.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+{{end}}

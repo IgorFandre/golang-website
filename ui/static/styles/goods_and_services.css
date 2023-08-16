@@ -1,0 +1,30 @@
+li.goods {
+    padding: 15px 0 15px 40px;
+}
+
+li.goods span {
+    text-decoration: underline;
+}
+
+li.goods:before {
+    content: "•";
+    padding-right: 7px;
+}
+
+li.goods ul {
+    padding-top: 15px;
+}
+
+.modal p {
+    text-align: justify;
+}
+
+.modal p img {
+    width: 45%;
+    float: right;
+    padding: 10px;
+}
+
+.modal ul li {
+    padding: 5px 0 5px 10px;
+}

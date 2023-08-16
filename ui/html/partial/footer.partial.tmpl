@@ -1,0 +1,41 @@
+{{define "footer"}}
+    <footer class="blue">
+        <div class="container">
+            <div class="footer-col left">
+                <div id="contact">
+                    <h2>Контактная информация:</h2>
+                </div>
+                <div class="footer-phone move">
+                    <a href="tel:+79122890409">+7 912 289-04-09</a>
+                </div>
+                <div class="footer-mail move">
+                    <a href="mailto:sutk-v@mail.ru">sutk-v@mail.ru</a>
+                </div>
+                <div class="footer-address move">
+                    <a href="https://yandex.ru/maps/org/uztm/1156804944/?ll=60.558953%2C56.879244&z=17.56">
+                        Россия, Екатеринбург, Донбасская, 58
+                    </a>
+                </div>
+                <div class="footer-address move">
+                    <a>
+                        График работы: пн-пт с 8:00 до 16:30
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div id="footer-map"></div>
+                <script type="text/javascript" src="/static/js/footer-map.js"></script>
+            </div>
+        </div>
+        <div class="footer-center">&copy; ООО Средне-Уральская Трубная Компания, 2006 — <span id="cur-year"></span></div>
+        <script type="text/javascript"> $('#cur-year').html(new Date().getFullYear()); </script>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        $('.nav-toggle').on('click', function () {
+            $('#menu').toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>
+{{end}}

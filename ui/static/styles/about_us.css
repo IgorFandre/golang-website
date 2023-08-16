@@ -1,0 +1,38 @@
+blockquote.adv {
+    margin: 10px 7vw 20px;
+    padding: 15px;
+    /*background: #d1eaff;*/
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 600px) {
+    blockquote.adv {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 1080px) {
+    blockquote.adv {
+        font-size: 27px;
+    }
+}
+
+blockquote.adv * {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote.adv > p {
+    width: 85%;
+}
+
+blockquote.adv > img {
+    height: auto;
+    width: 15%;
+}

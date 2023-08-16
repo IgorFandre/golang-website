@@ -1,0 +1,59 @@
+{{template "base" .}}
+
+{{define "stylesheet"}}main.css{{end}}
+
+{{define "name"}}Главная{{end}}
+
+{{define "menu"}}
+   <li><a href="/" class="active">Главная</a></li>
+   <li><a href="/about_us">О компании</a></li>
+   <li><a href="/goods_and_services">Товары и услуги</a></li>
+   <li><a href="/delivery">Доставка и оплата</a></li>
+   <li><a href="/#contact">Контакты</a></li>
+{{end}}
+
+{{define "main"}}
+    <div class="container white">
+        <p class="content">
+            Добро пожаловать на сайт <b>ООО «Средне-Уральская трубная компания»</b>. Мы специализируемся на предоставлении высококачественного металлопроката с акцентом на пунктуальность и соответствие государственным стандартам
+			и понимаем важность точности и надежности в нашей работе, поэтому предлагаем вам только проверенные и сертифицированные материалы.
+			Кроме того, чтобы удовлетворить ваши потребности, мы также предоставляем услуги в виде резки и грузоперевозки.
+		</p>
+		<p class="content">
+			Читайте далее, чтобы узнать больше о нас и о том, чем мы можем помочь вам.
+		</p>
+
+       <h3>В продаже:</h3>
+		<div class="box box--media">
+			<div>
+				<img src="/static/img/box/tube.png">
+				<p class="box-content">Трубы стальные</p>
+			</div>
+			<div>
+				<img src="/static/img/box/rent.png">
+				<p class="box-content">Сортовой и фасонный прокат</p>
+			</div>
+			<div>
+				<img src="/static/img/box/plate.png">
+				<p class="box-content">Листовой прокат</p>
+			</div>
+			<div>
+				<img src="/static/img/box/truck.png">
+				<p class="box-content">Грузоперевозки с собственным автотранспортом</p>
+			</div>
+			<div>
+				<img src="/static/img/box/arm.png">
+				<p class="box-content">Трубопроводная арматура</p>
+			</div>
+			<div>
+				<img src="/static/img/box/more.png">
+				<a href="/goods_and_services" class="box-content more">Узнать подробнее</a>
+			</div>
+		</div>
+
+	    <h3>Наше местоположение:</h3>
+	    <div id="map"></div>
+	    <script type="text/javascript" src="/static/js/main-map.js"></script>
+
+    </div>
+{{end}}

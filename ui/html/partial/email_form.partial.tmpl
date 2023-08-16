@@ -1,0 +1,38 @@
+{{define "email_form"}}
+    <div class="modal fade" id="emailModalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalFormLabel">Обратная связь</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="e-contactForm" action="/send/request" method="post">
+						<div class="form-group">
+							<label for="e_name">Ваше имя:</label>
+							<input id="e-name" class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="form-group">
+							<label for="email">Ваш e-mail:</label>
+							<input id="email" class="form-control" name="contact" required type="text" placeholder="ivanov@email.com">
+						</div>
+						<div class="form-group">
+							<label for="e-message">Текст сообщения:</label>
+							<textarea id="e-message" class="form-control" required name="message" rows="4"></textarea>
+						</div>
+						<div class="form-group form-check">
+							<input id="e-check" class="form-check-input" checked type="checkbox">
+							<label class="form-check-label" for="e-check">Я добровольно отправляю свои данные</label>
+						</div>
+						<button id="e-button" class="btn btn-info submitter" type="submit">Отправить <span id="e-loader" style="display:none"><img src="/static/img/loader.gif" alt=""></span></button>
+						<div class="e-answer">
+                        	<span id="e-answer"></span>
+                        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{{end}}

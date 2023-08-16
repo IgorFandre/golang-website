@@ -1,0 +1,38 @@
+{{define "phone_form"}}
+    <div class="modal fade" id="phoneModalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalFormLabel">Обратная связь</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="ph-contactForm" action="/send/request" method="post">
+						<div class="form-group">
+							<label for="ph-name">Ваше имя:</label>
+							<input id="ph-name" class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="form-group">
+							<label for="phone">Ваш телефон:</label>
+							<input id="phone" class="form-control" name="contact" required type="text" placeholder="+7 (999) 999-99-99">
+						</div>
+						<div class="form-group">
+							<label for="ph-message">Текст сообщения (необязательно):</label>
+							<textarea id="ph-message" class="form-control" name="message" rows="4"></textarea>
+						</div>
+						<div class="form-group form-check">
+							<input id="ph-check" class="form-check-input" checked type="checkbox">
+							<label class="form-check-label" for="ph-check">Я добровольно отправляю свои данные</label>
+						</div>
+						<button id="ph-button" class="btn btn-primary submitter" type="submit">Отправить <span id="ph-loader" style="display:none"><img src="/static/img/loader.gif" alt=""></span></button>
+					    <div class="ph-result">
+                    		<span id="ph-answer"></span>
+                    	</div>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+{{end}}

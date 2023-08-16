@@ -1,0 +1,63 @@
+{{template "base" .}}
+
+{{define "stylesheet"}}about_us.css{{end}}
+
+{{define "name"}}О компании{{end}}
+
+{{define "menu"}}
+    <li><a href="/">Главная</a></li>
+    <li><a href="/about_us" class="active">О компании</a></li>
+    <li><a href="/goods_and_services">Товары и услуги</a></li>
+    <li><a href="/delivery">Доставка и оплата</a></li>
+    <li><a href="/about_us#contact">Контакты</a></li>
+{{end}}
+
+{{define "main"}}
+    <div class="container white">
+        <p class="content">
+            <b>ООО «Средне-Уральская трубная компания»</b> образовалось в сентябре 2006 года.
+            Основное направление нашей компании комплексные поставки трубной продукции и металлопроката, а также
+            сопутствующих элементов, в частности запорной арматуры.
+            С каждым годом расширяется ассортимент занимаемся поставками цветного проката, полимерных труб и фитингов.
+		</p>
+
+        <h3>Преимущества работы с нашей компанией:</h3>
+        <blockquote class="adv">
+            <img src="/static/img/advantages/worker.png">
+            <p>
+       		    Команда профессионалов </br>
+       		    На рынке уже <span id="age"></span> лет
+       	    </p>
+       	    <script>
+                var found = new Date('2006-09-01');
+                var today = new Date();
+                var age = Math.floor((today-found) / (365.25 * 24 * 60 * 60 * 1000));
+                $('#age').html(age);
+       	    </script>
+        </blockquote>
+
+        <blockquote class="adv">
+            <img src="/static/img/advantages/delivery.png">
+            <p>
+                Оперативно соберем и доставим ваш заказ
+            </p>
+        </blockquote>
+
+        <blockquote class="adv">
+            <img src="/static/img/advantages/money.png">
+            <p>
+                Гибкие условия оплаты</br>
+                Подробнее на странице «<a href="/delivery">Доставка и оплата</a>»
+            </p>
+        </blockquote>
+
+        <blockquote class="adv">
+            <img src="/static/img/advantages/car.png">
+            <p>
+                Имеем собственный автопарк</br>
+                Доставка без посредников в любое удобное время
+            </p>
+        </blockquote>
+
+    </div>
+{{end}}

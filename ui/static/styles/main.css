@@ -1,0 +1,103 @@
+#map {
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+	margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+   #map {
+       height: 480px;
+   }
+}
+
+@media(max-width: 480px) {
+   #map {
+       height: 320px;
+   }
+}
+
+.box {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(var(--column), 1fr);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.box > div {
+    margin: 10px;
+    padding: 0;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.box div .box-content {
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.box > div > img {
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    margin: 0;
+}
+
+.box > div > p {
+    margin: 0;
+}
+
+@media (min-width: 300px) {
+    .box--media {
+        --column: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .box--media {
+        --column: 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .box--media {
+        --column: 3;
+    }
+}
+
+a.more {
+    text-align: center;
+}
+
+a:link.more,
+a:visited.more {
+	color: #2D4056;
+	text-decoration: none;
+}
+
+a:hover.more,
+a.active.more {
+	color: #1F64B1;
+	text-decoration: underline;
+}
+
+footer .flex-container {
+    display: flex;
+}
+
+/*
+
+#2D4056
+#1F64B1
+#242424
+
+*/

@@ -1,0 +1,36 @@
+ul.ls li::before {
+    content: "•";
+    padding-right: 7px;
+}
+
+ul.ls li {
+    padding: 15px 0 15px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+    margin-bottom: 20px;
+}
+table tr td {
+    font-weight: bold;
+    border-radius: 4px 0 0 4px;
+    background: #2e82c3;
+    padding: 5px;
+    font-size: 20px;
+}
+table tr td:first-child {
+    text-align: center;
+    color: #ffffff;
+}
+table tr td:last-child {
+    border: 1px solid #2e82c3;
+    border-radius: 0 4px 4px 0;
+    background: #cbdfef;
+    padding-left: 20px;
+}
+table tr td:hover:last-child {
+    background: #a2c3dd;
+    transition-duration: 0.2s;
+}
